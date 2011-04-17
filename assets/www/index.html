@@ -1,1 +1,59 @@
-<h1>Hello, World!</h1>
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>College Divestment</title>
+    <script type="text/javascript" charset="utf-8" src="phonegap.js"></script>
+    <link href="index.css" type="text/css" rel="stylesheet"/>
+    <script src="ColDiv.js" type="text/javascript"></script>
+    <script src="data.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="bground" style="position:relative;height:480px;">
+    <div id="fground" style="position:absolute;top:0px;bottom:0px;left:0px;z-index:1;width:100%;"> </div>
+    <div style="position:absolute;top:0px;left:0px;z-index:2;width:100%;height:100%;background:transparent">
+        <h1>College Divestment</h1>
+
+        <div id="data_input">
+            <label>Years in School</label>
+            <input id="years" type="tel"/> <br/>
+
+            <p>
+                <label>State</label>
+                <select id="state" onchange="pickSchool();">
+                </select>
+            </p>
+
+            <p>
+                <label>School</label>
+                <select id="school" onchange="schoolLogo();">
+                </select>
+            </p>
+            <hr/>
+        </div>
+        <div id="paid">
+            <p id="tuition">
+                <label>Tuition Paid = </label>
+                <span id="tuitOut"></span> <br/>
+            </p>
+
+            <p id="wages">
+                <label>Possible Wages = </label>
+                <span id="wagesOut"></span> <br/>
+            </p>
+        </div>
+        <div id="output">
+            <p>
+            <label>Money Earned = </label>
+            <span id="earnedOut"></span> <br/>
+
+            </p>
+
+
+        </div>
+        <div id="go">
+            <button onclick="moniesCalc();">Calculate</button>
+        </div>
+    </div>
+</div>
+</body>
+</html>
