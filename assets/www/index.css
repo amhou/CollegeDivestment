@@ -1,0 +1,53 @@
+/* div{
+    border: 1px dashed gray;
+} */
+body, #data_input{
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#years, #school{
+    width: 75px;
+}
+
+h1{
+    text-align: center;
+}
+#paid{
+    border-bottom: 2px solid black;
+    text-align: center;
+}
+
+#output{
+    font-weight: bold;
+    font-size: 14pt;
+}
+.input {
+    border: 1px solid #006;
+    background: #ffc;
+}
+
+label {
+    display: block;
+    width: 150px;
+    float: left;
+    margin: 2px 4px 6px 4px;
+    text-align: right;
+}
+#go{
+    width: 70px;
+    margin-left: auto;
+    margin-right: auto;
+}
+br { clear: left; }
+
+#wagesOut,#tuitOut,#earnedOut{
+    float: left;
+    font-weight: bold;
+}
+
+#earnedOut{
+    color: red;
+}
+
